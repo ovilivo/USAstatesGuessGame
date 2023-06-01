@@ -29,10 +29,4 @@ while len(guessed_states) < 50:
         answer.goto(int(state_data.x), int(state_data.y))
         answer.write(answer_state)
 
-remaining_states = []
-for state in state_list:
-    if state not in guessed_states:
-        remaining_states.append(state)
-
-pandas.to_csv()
 screen.exitonclick()
