@@ -10,8 +10,8 @@ data = pandas.read_csv("50_states.csv")
 state_list = data.state.to_list()
 guessed_states = []
 while len(guessed_states) < 50:
-    answer_state = turtle.textinput(title=f"{len(guessed_states)}/50 States Guessed",
-                                    prompt="Guess the State name").title()
+    answer_state = turtle.textinput(title=f'{len(guessed_states)}/50 States Guessed',
+                                    prompt='Guess the State name or type "Exit"').title()
     if answer_state == "Exit":
         remaining_states = []
         for state in state_list:
